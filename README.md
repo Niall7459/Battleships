@@ -4,11 +4,11 @@ Requires python version 2.7
 Requires colorama to function correctly.
 
 To do:
-[ ] Basic client stuff
-[ ] Finish client
-[ ] Add server
-[ ] Make server-client communicate
-[ ] Finalize
+- [ ] Basic client stuff
+- [ ] Finish client
+- [ ] Add server
+- [ ] Make server-client communicate
+- [ ] Finalize
 
 ![Alt text](screenshot.png?raw=true "Screenshot from terminal")
 
