@@ -6,7 +6,6 @@ from colorama import Fore, Back, Style
 from subprocess import call
 import colorama
 
-xesx = [1, 2]
 colors = [Fore.BLUE, Fore.GREEN, Fore.YELLOW, Fore.RED, Fore.MAGENTA, Fore.CYAN]
 colorama.init()
 
@@ -18,8 +17,6 @@ myguesses = []
 botguesses = []
 botships = []
 
-Xcoords = [11]
-Ocoords = [0]
 chatbox=[]
 maxplace = 9
 message="none"
