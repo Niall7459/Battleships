@@ -4,7 +4,7 @@ Requires python version 2.7
 Requires colorama to function correctly.
 
 To do:
-- [ ] Basic client stuff
+- [x] Basic client stuff
 - [ ] Finish client
 - [ ] Add server
 - [ ] Make server-client communicate
