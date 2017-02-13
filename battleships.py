@@ -6,7 +6,6 @@ from colorama import Fore, Back, Style
 from subprocess import call
 import colorama
 
-colors = [Fore.BLUE, Fore.GREEN, Fore.YELLOW, Fore.RED, Fore.MAGENTA, Fore.CYAN]
 colorama.init()
 
 firstShip = []
@@ -21,9 +20,6 @@ chatbox=[]
 maxplace = 9
 message="none"
 submsg=""
-cuser=Fore.RED + "Crosses"
-
-
 
 def board():
     place = 1
@@ -168,7 +164,3 @@ while True:
         gameloop()
     else:
         chatbox.append(Fore.RED + "All your ships are now sink!")
-    #      cuser=Fore.BLUE + "Noughts"
-  ##  if cuser==Fore.RED + "Crosses":
-    #else:
-     #   cuser=Fore.RED + "Crosses"
