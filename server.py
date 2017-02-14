@@ -1,5 +1,5 @@
-//Built off of HTTP Server module.
-//WE can use to repsond from the battleships client.
+#Built off of HTTP Server module.
+#WE can use to repsond from the battleships client.
 
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 
