@@ -19,16 +19,27 @@ class S(BaseHTTPRequestHandler):
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])#size
         post_data = self.rfile.read(content_length) #data
-        print post_data #Debug only
-        #All for debug       
+        
+        data = {}
+
         for var in post_data.split("&"):
             name = var.split("=")[0]
             value = var.split("=")[1]
-            print "Var: " + name + " : " + value
-        #End debug
-        self._set_headers()
-        self.wfile.write("Post")
+            data.append(name, value) #Lukily mr toombs had us a lesson on dictionarys!
         
+        action = data.get("action")
+        response = "Incomplete!"
+        
+        if action == "connect":
+            #Request connection RETURN Success TRUE : FALSE
+        else if action == "hit":
+            #Hit coords RETURN Did the user guess right, TRUE : FALSE
+        else:
+            #Error
+        
+        self._set_headers()
+        self.wfile.write(response)
+
 def run(server_class=HTTPServer, handler_class=S, port=3001):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
