@@ -25,9 +25,9 @@ def board():
     place = 1
     call(["cls"], shell=True)
     print(Style.BRIGHT + Fore.WHITE + "\n   Battleships")
-    print("\n\n      |----|----|----|----|----|----|      " + message)
-    for row in range(0,6):
-        for i in range(0,6):
+    print("\n\n      |----|----|----|----|----|----|----|----|      " + message)
+    for row in range(0,8):
+        for i in range(0,8):
             if i == 0:
                 sys.stdout.write("      |")
             if (place in firstShip) or (place in secondShip) or (place in thirdShip):  #One of my ships
@@ -45,8 +45,8 @@ def board():
                     user = Fore.WHITE + str(place)
                 else:
                     user = Fore.WHITE + str(place) + " "
-            if i <> 6:
-                if place == 6:
+            if i <> 8:
+                if place == 8:
                     sys.stdout.write(" " + user + " |      " + submsg)
                 else:
                     sys.stdout.write(" " + user + " |")
@@ -55,7 +55,7 @@ def board():
             place = place + 1
         if i != 3:
             sys.stdout.write("\n")
-            print("      |----|----|----|----|----|----|")
+            print("      |----|----|----|----|----|----|----|----|")
     print("")
 
 def drawchatbox():
