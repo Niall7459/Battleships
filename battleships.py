@@ -25,7 +25,8 @@ def board():
     place = 1
     call(["cls"], shell=True)
     print(Style.BRIGHT + Fore.WHITE + "\n   Battleships")
-    print("\n\n      |----|----|----|----|----|----|----|----|      " + message)
+    print("\n\n      | 1  | 2  | 3  | 4  | 5  | 6  | 7  | 8  |      " + message)
+    print("\n\n      |----|----|----|----|----|----|----|----|      ")
     for row in range(0,8):
         for i in range(0,8):
             if i == 0:
