@@ -1,6 +1,24 @@
 #Built off of HTTP Server module.
 #WE can use to repsond from the battleships client.
 
+# Current 8x6
+serverBoard = [[0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0],
+               [0,0,0,0,0,0,0,0]]
+
+#Server board, some keys:
+# 1 = Player 1 Ship
+# 2 = Player 2 Ship
+# 3 = Player 1 Ship Hit
+# 4 = Player 2 Ship Hit
+# 5 = Player 1 Guess
+# 6 = Player 2 Guess
+# 7 = Player 1 Hit Success
+# 8 = Player 2 Hit Success
+
 from BaseHTTPServer import BaseHTTPRequestHandler, HTTPServer
 
 class S(BaseHTTPRequestHandler):
