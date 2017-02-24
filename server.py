@@ -9,6 +9,8 @@ serverBoard = [[0,0,0,0,0,0,0,0],
                [0,0,0,0,0,0,0,0],
                [0,0,0,0,0,0,0,0]]
 
+gameReady = false
+
 #Server board, some keys:
 # 1 = Player 1 Ship
 # 2 = Player 2 Ship
@@ -54,6 +56,9 @@ class S(BaseHTTPRequestHandler):
             #Hit coords RETURN Did the user guess right, TRUE : FALSE
         else:
             #Error
+            
+        if gameReady == false:
+          response = "0" #Tell client server full
         
         self._set_headers()
         self.wfile.write(response)
